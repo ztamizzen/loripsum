@@ -1,0 +1,27 @@
+{
+  "name": "loripsum",
+  "version": "0.1.0",
+  "description": "Gets things from LoripSum.net",
+  "main": "loripsum.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ztamizzen/loripsum.git"
+  },
+  "keywords": [
+    "loripsum",
+    "lorum",
+    "ipsum"
+  ],
+  "author": "Mats Lindblad <mats.lindblad@gmail.com> (http://mats-lindblad.se/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "git://github.com/ztamizzen/loripsum/issues"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
+  }
+}
