@@ -1,6 +1,6 @@
 {
   "name": "loripsum",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Gets things from LoripSum.net",
   "main": "loripsum.js",
   "scripts": {

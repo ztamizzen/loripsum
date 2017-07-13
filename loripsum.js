@@ -4,7 +4,7 @@ const defaultOptions = {
 	paragraphCount: 10,
 	paragraphLength: "short",
 	decorate: false,
-	links: false,
+	link: false,
 	ul: false,
 	ol: false,
 	dl: false,
@@ -12,7 +12,7 @@ const defaultOptions = {
 	code: false,
 	headers: true,
 	allcaps: false,
-	prude: false,
+	prude: false
 };
 
 module.exports = {
@@ -40,7 +40,7 @@ function getPromise(options) {
 		options.paragraphCount && url.push(options.paragraphCount);
 		options.paragraphLength && url.push(options.paragraphLength);
 		options.decorate && url.push('decorate');
-		options.links && url.push('link');
+		options.link && url.push('link');
 		options.ul && url.push('ul');
 		options.ol && url.push('ol');
 		options.dl && url.push('dl');
@@ -73,19 +73,3 @@ function getPromise(options) {
 		}).on('error', (e) => reject(e));
 	});
 }
-
-/**
- * (integer) - The number of paragraphs to generate.
- * short, medium, long, verylong - The average length of a paragraph.
- * decorate - Add bold, italic and marked text.
- * link - Add links.
- * ul - Add unordered lists.
- * ol - Add numbered lists.
- * dl - Add description lists.
- * bq - Add blockquotes.
- * code - Add code samples.
- * headers - Add headers.
- * allcaps - Use ALL CAPS.
- * prude - Prude version.
- * plaintext - Return plain text, no HTML.
- */
